@@ -20,5 +20,6 @@ clock(); //Lần đầu gọi hàm từ những lần sau cứ hết 1s thì hà
 (function loop() {
     setTimeout(function () {
         console.log("setTimeout")
+        loop()
     }, 5000);
 })();
